@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #myImage {
+            width: 300px;
+            height: auto;
+            transition: width 0.5s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Web Page Changing the Image on Click</h2>
+
+    <button onclick="document.getElementById('myImage').src='OIP.jfif'; document.getElementById('myImage').style.width='300px';">House Burning</button>
+
+    <img id="myImage" src="OIP.jfif" style="width:300px; height:auto">
+
+    <button onclick="document.getElementById('myImage').src='OIP (2).jfif'; document.getElementById('myImage').style.width='300px';">Call Fire Brigade</button>
+
+</body>
+</html>
